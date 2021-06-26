@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejerciocio2</title>
+</head>
+<body>
+    <h1>Programacion Orientada a Prototipos Ejerciocio2</h1>
+    <p>Generar un objeto llamado persona que posea estas propiedades de nombre, apellido, edad. 
+    Tendra el getter de nombre completo que sera la suma del nombre y el apellido. 
+    Tendra el setter de cambiarEdad que le sumara a la edad el valor ingreaso</p>
+    <script>
+        const persona = {
+        nombre: "German",
+		apellido: "Mendoza",
+        edad:48,
+		getNombrecompleto: function (){
+			return  `${this.nombre} - ${this.apellido}`
+		},
+        cambiarEdad: function (numero){
+			this.edad += numero;
+			}
+        }
+   
+      
+    </script>
+</body>
+</html>
